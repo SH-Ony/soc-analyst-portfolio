@@ -10,7 +10,7 @@ The purpose of this repository is to reinforce my understanding, improve my docu
 
 ## Connect with Me
 
-- **LinkedIn:** https://linkedin.com/in/your-profile
+- **LinkedIn:** www.linkedin.com/in/shakhawathony
 - **GitHub:** https://github.com/SH-Ony
 - **Codeforces:** https://codeforces.com/profile/SH_Ony
 - **LeetCode:** https://leetcode.com/u/SH_Ony/
