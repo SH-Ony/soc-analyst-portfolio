@@ -1,53 +1,217 @@
-
-# SOC Team Internals
+# Module 01 – SOC Team Internals
 
 ## Overview
 
-This section documents my learning from the **SOC Team Internals** module in the TryHackMe SOC Level 1 learning path.
+This module introduces the day-to-day responsibilities of a Security Operations Center (SOC) analyst and the operational processes followed when monitoring, investigating, and responding to security events.
 
-The focus of this module is understanding the day-to-day responsibilities of a Level 1 Security Operations Center (SOC) analyst. It introduces the operational workflow of handling security alerts, communicating incidents, following playbooks, and maintaining effective SOC operations.
-
-Rather than focusing on offensive techniques, this module develops the analytical mindset required to monitor, investigate, document, and escalate security incidents.
+Rather than focusing on offensive security, this module develops the analytical mindset required to work in a defensive security environment. It covers the complete workflow from receiving an alert to documenting findings, escalating incidents, and measuring SOC performance.
 
 ---
 
-## Topics Covered
+## Learning Objectives
 
-- SOC Alert Triage
-- Alert Reporting and Escalation
-- SOC Playbooks and Workbooks
-- SOC Metrics and Objectives
-- Introduction to Phishing Analysis
+After completing this module, I am able to:
+
+- Understand the responsibilities of a Level 1 SOC Analyst.
+- Perform basic alert triage and prioritization.
+- Create clear and structured incident reports.
+- Understand how SOC playbooks standardize investigations.
+- Interpret common SOC performance metrics.
+- Recognize the fundamentals of phishing investigations.
 
 ---
 
-## Skills Developed
+## Rooms Completed
+
+- ✅ Alert Triage
+- ✅ Alert Reporting
+- ✅ SOC Workbooks and Lookups
+- ✅ SOC Metrics and Objectives
+- ✅ Introduction to Phishing
+
+---
+
+## Key Concepts Learned
+
+### Alert Triage
+
+Alert triage is the first step after a security alert is generated.
+
+The objective is to determine whether the alert represents:
+
+- A true positive
+- A false positive
+- Benign activity requiring no action
+
+During triage, analysts collect evidence, determine severity, and decide whether the incident should be escalated.
+
+---
+
+### Alert Reporting
+
+Good technical analysis is only valuable if it is communicated clearly.
+
+A security incident report should document:
+
+- What happened
+- When it happened
+- Systems affected
+- Evidence collected
+- Investigation performed
+- Risk assessment
+- Recommended actions
+
+Clear reporting allows other analysts to continue investigations efficiently.
+
+---
+
+### SOC Workbooks and Playbooks
+
+SOC playbooks provide standardized investigation procedures for common security incidents.
+
+Examples include:
+
+- Phishing emails
+- Malware infections
+- Brute-force attacks
+- Suspicious PowerShell execution
+
+Following documented playbooks improves consistency, reduces human error, and accelerates incident response.
+
+---
+
+### SOC Metrics
+
+SOC performance is measured using operational metrics rather than simply counting incidents.
+
+Important metrics include:
+
+- Mean Time To Detect (MTTD)
+- Mean Time To Respond (MTTR)
+- False Positive Rate
+- Alert Volume
+- Escalation Rate
+
+These metrics help organizations evaluate and continuously improve their security operations.
+
+---
+
+### Introduction to Phishing
+
+Phishing remains one of the most common attack vectors used by threat actors.
+
+Basic phishing investigations involve:
+
+- Verifying sender identity
+- Inspecting email headers
+- Analyzing URLs
+- Examining attachments
+- Identifying Indicators of Compromise (IOCs)
+- Determining whether escalation is required
+
+---
+
+## Practical Skills Developed
+
+During this module I practiced:
 
 - Alert prioritization
-- Severity classification
 - Incident documentation
-- Escalation procedures
-- Communication between SOC teams
-- Following investigation playbooks
-- Analytical decision making
+- Investigation workflows
+- Severity classification
+- Escalation decision making
+- Basic phishing analysis
+- Following SOC procedures
 
 ---
 
-## Practical Value
+## How This Applies in a Real SOC
 
-These skills closely match the responsibilities of an entry-level Security Analyst responsible for:
+A Level 1 SOC analyst is responsible for monitoring security alerts and performing the initial investigation.
 
-- Monitoring security alerts
-- Investigating suspicious activity
-- Responding to incidents
-- Documenting investigations
-- Escalating security events
-- Supporting 24/7 SOC operations
+Typical workflow:
+
+1. Receive an alert.
+2. Validate the alert.
+3. Gather relevant evidence.
+4. Determine severity.
+5. Decide whether the alert is malicious or benign.
+6. Escalate confirmed incidents to higher-tier analysts.
+7. Document all findings.
+
+Although L1 analysts may not perform advanced forensic investigations, their decisions directly influence the speed and effectiveness of incident response.
+
+---
+
+## Important Terminology
+
+| Term | Description |
+|------|-------------|
+| Alert | Notification generated by a security tool indicating suspicious activity. |
+| Triage | Initial assessment of an alert to determine its priority and legitimacy. |
+| False Positive | An alert incorrectly identifying benign activity as malicious. |
+| True Positive | An alert that correctly identifies malicious activity. |
+| Escalation | Passing an incident to a higher-tier analyst for further investigation. |
+| IOC | Indicator of Compromise such as malicious IP addresses, hashes, or domains. |
+| Playbook | Standardized investigation procedure for a specific incident type. |
+| MTTD | Mean Time To Detect. |
+| MTTR | Mean Time To Respond. |
+
+---
+
+## Interview Preparation
+
+### Possible Interview Questions
+
+**What is alert triage?**
+
+Alert triage is the process of reviewing security alerts, validating their legitimacy, determining their severity, and deciding whether they require escalation or can be safely closed.
+
+---
+
+**Why is documentation important in a SOC?**
+
+Accurate documentation ensures investigations are repeatable, supports communication between analysts, and provides evidence for future incident response activities.
+
+---
+
+**What is a false positive?**
+
+A false positive is an alert generated by a security tool that incorrectly identifies normal activity as malicious.
+
+---
+
+**What is the purpose of a SOC playbook?**
+
+Playbooks provide standardized investigation procedures, ensuring consistency, reducing mistakes, and improving response times.
+
+---
+
+**Why are SOC metrics important?**
+
+SOC metrics help organizations measure detection effectiveness, response efficiency, and identify areas where security operations can be improved.
 
 ---
 
 ## Reflection
 
-One important lesson from this module is that an L1 SOC analyst is not expected to solve every security incident independently. Instead, the analyst's responsibility is to collect evidence, perform initial investigation, accurately document findings, determine the appropriate severity, and escalate incidents when necessary.
+This module changed my understanding of a Security Operations Center.
 
-Good documentation and consistent processes are just as important as technical knowledge in maintaining an effective SOC.
+Before completing it, I viewed SOC work mainly as monitoring alerts. I now understand that a large part of the role involves structured decision-making, documentation, communication, and following repeatable investigation procedures.
+
+One of my biggest takeaways is that a successful Level 1 SOC analyst is not expected to know everything. Instead, they must consistently perform accurate triage, collect evidence, document their findings clearly, and escalate incidents appropriately.
+
+---
+
+## Next Module
+
+ Core SOC Solutions
+
+Topics to learn:
+
+- SIEM
+- EDR
+- SOAR
+- Elastic Stack
+- Splunk
+- Security monitoring architecture
